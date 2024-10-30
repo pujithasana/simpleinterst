@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <script>
+        function calculateSimpleInterest() {
+            const principal = 5000; // Principal amount
+            const rate = 2.5; // Rate of interest
+            const time = 1; // Time in years
+
+            const simpleInterest = (principal * rate * time) / 100;
+
+            document.getElementById("result").innerText = "Simple Interest: Rs. " + simpleInterest;
+        }
+    </script>
+</head>
+<body>
+    <h1>Simple Interest Calculator</h1>
+    <p>Principal Amount: Rs. 5000</p>
+    <p>Rate of Interest: 2.5%</p>
+    <p>Tenure: 1 year</p>
+    <button onclick="calculateSimpleInterest()">Calculate Simple Interest</button>
+    <p id="result"></p>
+</body>
+</html>
